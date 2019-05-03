@@ -33,6 +33,9 @@ class BinarySearchTree<T>{
         else return right.contains(data);
     }
 
+
+    // This Damn Fucking DFS
+    
     public void preOrder(){
         System.out.print(this.data.toString()+", ");
         if(this.left != null) left.preOrder();
