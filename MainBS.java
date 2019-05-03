@@ -12,6 +12,7 @@ public class MainBS {
 			System.out.println("3. preorder");
 			System.out.println("4. inorder");
 			System.out.println("5. postorder");
+			System.out.println("6. BFS");
 			System.out.println("Pilih : ");
 			int pilih = inp_int.nextInt();
 
@@ -34,6 +35,9 @@ public class MainBS {
 					break;
 				case 5:
 					pohon.postOrder();
+					break;
+				case 6:
+					pohon.BFS();
 					break;
 				default:
 					break;

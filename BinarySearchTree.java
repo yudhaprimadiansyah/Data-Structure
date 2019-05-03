@@ -34,10 +34,19 @@ class BinarySearchTree<T>{
     }
 
 
+    // This Damn Fucking BFS
+    public void BFS(){
+        if(data != null){
+            System.out.print(this.data.toString()+", ");
+        }
+        this.left.BFS();
+        this.right.BFS();
+    }
+
     // This Damn Fucking DFS
-    
+
     public void preOrder(){
-        System.out.print(this.data.toString()+", ");
+        if(this.data != null) System.out.print(this.data.toString()+", ");
         if(this.left != null) left.preOrder();
         if(this.right != null) right.preOrder();
         
@@ -45,7 +54,7 @@ class BinarySearchTree<T>{
 
     public void inOrder(){
         if(this.left != null) left.inOrder();
-        System.out.print(this.data.toString()+", ");
+        if(this.data != null) System.out.print(this.data.toString()+", ");
         if(this.right != null) right.inOrder();
         
     }
@@ -53,7 +62,7 @@ class BinarySearchTree<T>{
     public void postOrder(){
         if(this.left != null) left.postOrder();
         if(this.right != null) right.postOrder();
-        System.out.print(this.data.toString()+", ");
+        if(this.data != null) System.out.print(this.data.toString()+", ");
     }
 
     
